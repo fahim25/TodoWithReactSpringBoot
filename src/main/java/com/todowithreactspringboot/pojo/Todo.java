@@ -1,6 +1,7 @@
 package com.todowithreactspringboot.pojo;
 
 import java.util.Date;
+import java.util.Objects;
 
 public class Todo {
     private long id;
@@ -8,6 +9,18 @@ public class Todo {
     private String description;
     private Date targetDate;
     private boolean isDone;
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Todo todo)) return false;
+        return getId() == todo.getId();
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getId());
+    }
 
     @Override
     public String toString() {
