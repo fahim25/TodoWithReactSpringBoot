@@ -20,6 +20,11 @@ public class TodoResource {
         return todoService.findAll();
     }
 
+    @GetMapping("users/{username}/todos/{id}")
+    public Todo getTodos(@PathVariable("username") String username, @PathVariable long id){
+        return todoService.findById(id);
+    }
+
 
     /*Delete Method*/
     @DeleteMapping("users/{username}/todos/{id}")
