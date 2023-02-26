@@ -1,8 +1,8 @@
-package com.todowithreactspringboot;
+package com.todowithreactspringboot.basic.auth;
 
+import com.todowithreactspringboot.AuthenticationBean;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
