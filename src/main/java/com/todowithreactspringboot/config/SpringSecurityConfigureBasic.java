@@ -1,4 +1,4 @@
-package com.todowithreactspringboot.config;
+/*package com.todowithreactspringboot.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
@@ -21,7 +21,7 @@ public class SpringSecurityConfigureBasic extends WebSecurityConfigurerAdapter {
                 .httpBasic();
     }
 
-/*    @Bean
+*//*    @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http.cors().and().csrf().disable()
                 .authorizeRequests().antMatchers(HttpMethod.OPTIONS,"/**").permitAll()
@@ -34,5 +34,5 @@ public class SpringSecurityConfigureBasic extends WebSecurityConfigurerAdapter {
         // http....;
 
         return http.build();
-    }*/
-}
+    }*//*
+}*/
