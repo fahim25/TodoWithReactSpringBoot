@@ -80,6 +80,8 @@ public class JwtAuthenticationRestController {
 
         try {
             authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(username, password));
+            System.out.println(username);
+            System.out.println(password);
         } catch (DisabledException e) {
             throw new AuthenticationException("USER_DISABLED", e);
         } catch (BadCredentialsException e) {
